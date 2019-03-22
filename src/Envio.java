@@ -7,12 +7,12 @@ public class Envio {
     private String cpEntrega;
     private String cpRemitente;
     private Double peso;
-    private List<Proveedor> proveedor;
+    private Proveedor proveedor;
     private String tipo;
     private List<String> etiquetas;
     private String ruta;
 
-    public Envio (String id, String dirEntrega, String dirRemitente, String cpEntrega, String cpRemitente, Double peso, List<Proveedor> proveedor, String tipo, List<String> etiqutetas, String ruta){
+    public Envio (String id, String dirEntrega, String dirRemitente, String cpEntrega, String cpRemitente, Double peso, Proveedor proveedor, String tipo, List<String> etiqutetas, String ruta){
         this.id = id;
         this.dirEntrega = dirEntrega;
         this.dirRemitente = dirRemitente;
