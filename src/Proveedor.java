@@ -1,8 +1,5 @@
-public class Proveedor {
-    private String nombre;
-    private String ubicacion;
-    public Proveedor (String nombre, String ubicacion){
-        this.nombre = nombre;
-        this.ubicacion = ubicacion;
-    }
+public interface Proveedor {
+    static double LIMITE_DIMENSIONES = 100.0;
+    static final double PESO_ESTANDAR = 250.0;
+    public double calcularPrecio(Envio envio);
 }
